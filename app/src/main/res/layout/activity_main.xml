@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:text="@string/txt_tutorial_chipgroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/add_Tags"
+        android:layout_below="@+id/title"
+        android:hint="Masukkan Tag"
+        android:layout_toLeftOf="@+id/img_addtag"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="10dp"
+        android:layout_height="40dp"/>
+
+    <ImageView
+        android:id="@+id/img_addtag"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_add"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"/>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chip_group_Add"
+        android:layout_below="@+id/img_addtag"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
